@@ -1,1048 +1,428 @@
 <!DOCTYPE html>
-<html>
-
-
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>
-NOTAS "LEONIDAS"
-</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+    <title>Notas Leonidas</title>
 
-<link rel="icon" href="https://lh5.googleusercontent.com/UyGo9xJT0hzHxx3zN-lFHnxJVAZDmfziXnVGvi2a0fwH33PDh6e37enm1vjUFMgynYcEykcbxJtPj0Q=w1054-h579">
-
-
-<style type="text/css">
-  body {
-   
-    background-color:#013A3A;
+    <style type="text/css">
+      body {
+       
+        background-color:#013A3A;
+        
+       }
+    h1, h2, h3, h4, h5, h6, a {
+      margin:0; padding:0;
+    }
     
-   }
-
-
-h1, h2, h3, h4, h5, h6, a {
-  margin:0; padding:0;
-}
-
-.login {
-  margin:0 auto;
-  max-width:500px;
-}
-.login-header {
-  color:#fff;
-  text-align:center;
-  font-size:100%;
-}
-/* .login-header h1 {
-   text-shadow: 0px 5px 15px #000; */
-   .note{
-  color:#fff;
-}
-.cabesilla{  
-  color:#fff;
-}
-   table {margin:auto;}
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-table, td, th {    
-    border: 1px solid #ddd;
-    text-align: left;
-}
-th, td {
-    text-align: left;
-    padding: 8px;
-}
-
-tr:nth-child(even){background-color: #fff2f2}
-
-th {
-    background-color: #4CAF50;
-    color: white;
-}
-td {
-    background-color: #213821;
-    color: white;
-}
-
-
-
-.login-form h3 {
-  text-align:left;
-  margin-left:40px;
-  color:#fff;
-}
-.login-form {
-  box-sizing:border-box;
-  padding-top:15px;
-	padding-bottom:10%;
-  margin:5% auto;
-  text-align:center;
-}
-.login input[type="text"],
-.login input[type="password"] {
-  max-width:400px;
-	width: 80%;
-  line-height:3em;
-  font-family: 'Ubuntu', sans-serif;
-  margin:1em 2em;
-  border-radius:5px;
-  border:2px solid #f2f2f2;
-  outline:none;
-  padding-left:10px;
-}
-.login-form input[type="button"] {
-  height:30px;
-  width:100px;
-  background:#fff;
-  border:1px solid #f2f2f2;
-  border-radius:20px;
-  color: slategrey;
-  text-transform:uppercase;
-  font-family: 'Ubuntu', sans-serif;
-  cursor:pointer;
-}
-.sign-up{
-  color:#f2f2f2;
-  margin-left:-70%;
-  cursor:pointer;
-  text-decoration:underline;
-}
-.no-access {
-  color:#E86850;
-  margin:20px 0px 20px -57%;
-  text-decoration:underline;
-  cursor:pointer;
-}
-.try-again {
-  color:#f2f2f2;
-  text-decoration:underline;
-  cursor:pointer;
-}
-
-/*Media Querie*/
-@media only screen and (min-width : 150px) and (max-width : 530px){
-  .login-form h3 {
-    text-align:center;
-    margin:0;
-  }
-  .sign-up, .no-access {
-    margin:10px 0;
-  }
-  .login-button {
-    margin-bottom:10px;
-  }
-}
-
-#myDIV {
-    width: 500px;
-    height: 500px;
-
-}
-
-.camb{ 
-  width:40em;
-  color: #ebe5e5;}
-
-.button {
-    display: inline-block;
-  border-radius: 99px;
-  background-color: #f4511e;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 12px;
-  padding: 5px;
-  width: 100px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-.butto {
-    display: inline-block;
-  border-radius: 99px;
-  background-color: #3223ff;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 12px;
-  padding: 5px;
-  width: 100px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-
-
-
-
-
-
-</style>
-
-
-
+    .login {
+      margin:0 auto;
+      max-width:500px;
+    }
+    .login-header {
+      color:#fff;
+      text-align:center;
+      font-size:100%;
+    }
+    /* .login-header h1 {
+       text-shadow: 0px 5px 15px #000; */
+       .note{
+      color:#fff;
+    }
+    .cabesilla{  
+      color:#fff;
+    }
+       table {margin:auto;}
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    table, td, th {    
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+    th, td {
+        text-align: left;
+        padding: 8px;
+    }
+    
+    tr:nth-child(even){background-color: #fff2f2}
+    
+    th {
+        background-color: #4CAF50;
+        color: white;
+    }
+    td {
+        background-color: #213821;
+        color: white;
+    }   
+    .login-form h3 {
+      text-align:left;
+      margin-left:40px;
+      color:#fff;
+    }
+    .login-form {
+      box-sizing:border-box;
+      padding-top:15px;
+      padding-bottom:10%;
+      margin:5% auto;
+      text-align:center;
+    }
+    .login input[type="text"],
+    .login input[type="password"] {
+      max-width:400px;
+      width: 80%;
+      line-height:3em;
+      font-family: 'Ubuntu', sans-serif;
+      margin:1em 2em;
+      border-radius:5px;
+      border:2px solid #f2f2f2;
+      outline:none;
+      padding-left:10px;
+    }
+    .login-form input[type="button"] {
+      height:30px;
+      width:100px;
+      background:#fff;
+      border:1px solid #f2f2f2;
+      border-radius:20px;
+      color: slategrey;
+      text-transform:uppercase;
+      font-family: 'Ubuntu', sans-serif;
+      cursor:pointer;
+    }
+    .sign-up{
+      color:#f2f2f2;
+      margin-left:-70%;
+      cursor:pointer;
+      text-decoration:underline;
+    }
+    .no-access {
+      color:#E86850;
+      margin:20px 0px 20px -57%;
+      text-decoration:underline;
+      cursor:pointer;
+    }
+    .try-again {
+      color:#f2f2f2;
+      text-decoration:underline;
+      cursor:pointer;
+    }
+    
+    /*Media Querie*/
+    @media only screen and (min-width : 150px) and (max-width : 530px){
+      .login-form h3 {
+        text-align:center;
+        margin:0;
+      }
+      .sign-up, .no-access {
+        margin:10px 0;
+      }
+      .login-button {
+        margin-bottom:10px;
+      }
+    }
+    
+    #myDIV {
+        width: 500px;
+        height: 500px;
+    
+    }
+    
+    .camb{ 
+      width:40em;
+      color: #ebe5e5;}
+    
+    .button {
+        display: inline-block;
+      border-radius: 99px;
+      background-color: #f4511e;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 12px;
+      padding: 5px;
+      width: 100px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
+    .butto {
+        display: inline-block;
+      border-radius: 99px;
+      background-color: #3223ff;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 12px;
+      padding: 5px;
+      width: 100px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
+    </style>
+</head>
 
 <script type="text/javascript">
-
-
-
-   
-
-
-
-var attempt = 3; // Variable to count number of attempts.
-// Below function Executes on click of login button.
-
-
-
-function validate(){
-
- document.getElementById("myDIV").style.display = "none";
- document.getElementById("seR").style.display = "initial";
- document.getElementById("seR2").style.display = "initial";
-
-//var username = document.getElementById("username").value;
-var password = document.getElementById("password").value;
-
-
-if ( password == "0978628035"){
-alert ("ACCESO A TUTOR");
-//window.location = "https://www-drv.com/site/ipiyyiarnmnz2hdsreamyg/SanLuis/Paginas/TABLAPRINCIPAL.html"; // Redirecting to other page.
-
-}
-
-
-else if (password=="b") { 
-alert ("Root user");
-
-  //document.tt.searchTerm.value = "Abad"
-  document.tt.searchTerm.value ="ALEJANDRO SCHULT JHON ALAN";
-
-} 
-
-
-
-//Decimo
-else if (password=="0957805104") { document.tt.searchTerm.value ="ALEJANDRO SCHULT JHON ALAN";}
-else if (password=="0944077932") { document.tt.searchTerm.value ="ALMEIDA DUEÑAS EMYLI YULISSA";}
-else if (password=="0950652412") { document.tt.searchTerm.value ="ALVARADO GUAGUA JONATHAN RONALD";}
-else if (password=="0921570511") { document.tt.searchTerm.value ="AMBI JIMENEZ JULIO CESAR";}
-else if (password=="0930827365") { document.tt.searchTerm.value ="ANDRADE PARRAGA KATHERINE ADRIANA";}
-else if (password=="0944031442") { document.tt.searchTerm.value ="ANGULO VERA JENNIFFER JOHANA";}
-else if (password=="0922598420") { document.tt.searchTerm.value ="ARANA CARDENAS ZULLY JOSELYN";}
-else if (password=="0931732481") { document.tt.searchTerm.value ="ARCENTALES NAVARRO WILLIAM EDWARD";}
-else if (password=="0927627265") { document.tt.searchTerm.value ="ARIZAGA RUIZ ANDREA ESTEFANIA";}
-else if (password=="0930608179") { document.tt.searchTerm.value ="ASENCIO FRANCO CARLOS ALFREDO";}
-else if (password=="0919255638") { document.tt.searchTerm.value ="ASTUDILO ZAMBRANO JUSTINA JACQUELINE";}
-else if (password=="0951416437") { document.tt.searchTerm.value ="AYLLÓN LITARDO ODALIS PAULETTE";}
-else if (password=="0944286152") { document.tt.searchTerm.value ="AYOVI YUMICELA MARIA SOLEDAD";}
-else if (password=="0926410168") { document.tt.searchTerm.value ="BANGUERA RODRIGUEZ WILMER WILSON";}
-else if (password=="0921409983") { document.tt.searchTerm.value ="BARBERAN JARAMILLO LEIBER ARNALDO";}
-else if (password=="0925013732") { document.tt.searchTerm.value ="BARRETO ZAMBRANO ELIAS LEONARDO";}
-else if (password=="0924051964") { document.tt.searchTerm.value ="BARROS ORTONEDA ELIAS ENRIQUE";}
-else if (password=="0957584279") { document.tt.searchTerm.value ="BAUTISTA BAYAS MARIA JOSÉ";}
-else if (password=="0918595059") { document.tt.searchTerm.value ="BENAVIDES LEMA RUTH JAQUELIN";}
-else if (password=="0957882129") { document.tt.searchTerm.value ="BENAVIDES MORENO ALVARO ERNESTO";}
-else if (password=="0953735198") { document.tt.searchTerm.value ="BORBOR SANTIANA ERIC ANTHONY";}
-else if (password=="1729753630") { document.tt.searchTerm.value ="CABELLO QUIÑONEZ KERLY KATHERINE";}
-else if (password=="0912159233") { document.tt.searchTerm.value ="CAICEDO PERALTA ROCIO HERMINIA";}
-else if (password=="0951865294") { document.tt.searchTerm.value ="CAICEDO RODRIGUEZ JOSUE RAUL";}
-else if (password=="0915039812") { document.tt.searchTerm.value ="CALI MARIN JESSICA MARGARITA";}
-else if (password=="0925926156") { document.tt.searchTerm.value ="CALLE TOMALA DAVID RAFAEL";}
-else if (password=="0905193645") { document.tt.searchTerm.value ="CAMPOVERDE SUQUITANA MERCEDES LETICIA";}
-else if (password=="0952835643") { document.tt.searchTerm.value ="CARPIO ARIZALA ALEXANDRA DEL ROCIO";}
-else if (password=="0802563288") { document.tt.searchTerm.value ="CASIERRA LAJONES RICHAR ALBERTO";}
-else if (password=="0926714262") { document.tt.searchTerm.value ="CASTRO CETRE VERONICA CIRILA";}
-else if (password=="0950361154") { document.tt.searchTerm.value ="CHASI SINCHI STALIN JAVIER";}
-else if (password=="0908997919") { document.tt.searchTerm.value ="CHAVEZ RODRIGUEZ MERCEDES ALEXANDRA";}
-else if (password=="0925397325") { document.tt.searchTerm.value ="CHAVEZ ZAMBRANO PABLO ISAIAS";}
-else if (password=="0923193841") { document.tt.searchTerm.value ="CHICAIZA JIMENEZ DANIEL WASHINGTON";}
-else if (password=="0927588079") { document.tt.searchTerm.value ="CISNEROS COTO DIANA CAROLINA";}
-else if (password=="0959354531") { document.tt.searchTerm.value ="CLAVIJO BAQUE LILIANA LISBETH";}
-else if (password=="0955989728") { document.tt.searchTerm.value ="COELLO MURILLO CINTHYA NAOMI";}
-else if (password=="0923443295") { document.tt.searchTerm.value ="CONFORME ANDRADE RUTH ELIZABETH";}
-else if (password=="0957836166") { document.tt.searchTerm.value ="COROZO CAICEDO KARELY DALILA";}
-else if (password=="0929151736") { document.tt.searchTerm.value ="CORTEZ MARQUINEZ DIANA MARIELA";}
-else if (password=="1203722390") { document.tt.searchTerm.value ="CORTEZ PRADO ROXANA ELIZABETH";}
-else if (password=="0929065340") { document.tt.searchTerm.value ="DE LA PAZ RIOS SARA NADIA";}
-else if (password=="0929636942") { document.tt.searchTerm.value ="DELGADO CABRITONGO JOHANNA DEL CARMEN";}
-else if (password=="1803821154") { document.tt.searchTerm.value ="DELGADO VALVERDE ERIKA MARIA";}
-else if (password=="0932266422") { document.tt.searchTerm.value ="DI LORENZO FUENTES KIARA NAYELI";}
-else if (password=="0959832262") { document.tt.searchTerm.value ="DÍAZ GUILLEN ADRIAN ALEJANDRO";}
-else if (password=="0923214191") { document.tt.searchTerm.value ="EGAS VERA MIRIAM GENOVEVA";}
-else if (password=="0954550794") { document.tt.searchTerm.value ="FAJARDO SAMANIEGO ODALYS YAMILETH";}
-else if (password=="0926412750") { document.tt.searchTerm.value ="FERRIN OLIVES MIKE CHRISTIAN";}
-else if (password=="0943894030") { document.tt.searchTerm.value ="FIGUEROA CHAVEZ EDWING ANDRES";}
-else if (password=="0913771911") { document.tt.searchTerm.value ="FIGUEROA MOSCOSO RUTH BERONICA";}
-else if (password=="0943849729") { document.tt.searchTerm.value ="FREIRE ESPINOZA VALESKA NATALIA";}
-else if (password=="0943142109") { document.tt.searchTerm.value ="GARCIA SALTOS JENNIFER ARELIS";}
-else if (password=="0921281168") { document.tt.searchTerm.value ="GARCIA VERA CARLOS FERNANDO";}
-else if (password=="0919515098") { document.tt.searchTerm.value ="GARCIA VERA JESSENIA ISABEL";}
-else if (password=="32516954") { document.tt.searchTerm.value ="GONZALEZ ARVELAEZ NELCYS ALEJANDRA";}
-else if (password=="0915604128") { document.tt.searchTerm.value ="GRANILLO CALDERON JOSE FREDDY";}
-else if (password=="0953939469") { document.tt.searchTerm.value ="GRUEZO MONTAÑO TANIA ESTEFANIA";}
-else if (password=="0958737942") { document.tt.searchTerm.value ="GUADAMUD LUCAS ALLISON SCARLETH";}
-else if (password=="0940178742") { document.tt.searchTerm.value ="GUERRERO MORA JESSICA MARIA";}
-else if (password=="1316270352") { document.tt.searchTerm.value ="HERNANDEZ DELGADO GINGER PAULINA";}
-else if (password=="0966575789") { document.tt.searchTerm.value ="HERNANDEZ HURTADO MARLON STIVEN";}
-else if (password=="0918793613") { document.tt.searchTerm.value ="HERRERA ESPINOZA MARIUXI JAZMIN";}
-else if (password=="1208199479") { document.tt.searchTerm.value ="IBARRA LEON ANTHONY DAMIAN";}
-else if (password=="1723741409") { document.tt.searchTerm.value ="ILVIS TENELEMA FILOMENA JANNETH";}
-else if (password=="0954008173") { document.tt.searchTerm.value ="JIMENEZ CASTILLO MELANIE CAROLINA";}
-else if (password=="0954605564") { document.tt.searchTerm.value ="JORDAN ROMERO JOHNNY WILLIAMS";}
-else if (password=="0916326754") { document.tt.searchTerm.value ="JOUTTEAUX CORONEL KATTYUSCA MARIELA";}
-else if (password=="0923528921") { document.tt.searchTerm.value ="JOUTTEAUX CORONEL ROXANA ELIZABETH";}
-else if (password=="0923451041") { document.tt.searchTerm.value ="LARA ESPAÑA JUAN JOSÉ";}
-else if (password=="1754914685") { document.tt.searchTerm.value ="LEM FERNANDEZ EVELYN AMELIA";}
-else if (password=="0953731924") { document.tt.searchTerm.value ="LEON CEDEÑO SANDRA ELIZABETH";}
-else if (password=="0923750590") { document.tt.searchTerm.value ="LEON JARAMILLO LIZBETH CAROLINA";}
-else if (password=="0929024883") { document.tt.searchTerm.value ="LEON PEÑAFIEL JOSELYN CAROLINA";}
-else if (password=="0951563832") { document.tt.searchTerm.value ="LOPEZ COCHEA JONATHAN SAUL";}
-else if (password=="0916871635") { document.tt.searchTerm.value ="LOZANO SINCHI MARIA RAQUEL";}
-else if (password=="0923499560") { document.tt.searchTerm.value ="LUCAS SALTOS EMILIA MABEL";}
-else if (password=="0918781196") { document.tt.searchTerm.value ="MACIAS MERA MAGDALENA ELIZABETH";}
-else if (password=="0930081187") { document.tt.searchTerm.value ="MALDONADO PELCHOR SARA LETICIA";}
-else if (password=="0951053149") { document.tt.searchTerm.value ="MARIN ACOSTA JONATHAN GABRIEL";}
-else if (password=="0927374371") { document.tt.searchTerm.value ="MARTINEZ ALLAUCA GEOVANNY ALEJANDRO";}
-else if (password=="0605133925") { document.tt.searchTerm.value ="MARTINEZ LLANGARI JESSICA VERONICA";}
-else if (password=="0605892868") { document.tt.searchTerm.value ="MARTINEZ LLANGARI MARTHA CECILIA";}
-else if (password=="0605892850") { document.tt.searchTerm.value ="MARTINEZ LLANGARI OLGA MARIA";}
-else if (password=="0952525012") { document.tt.searchTerm.value ="MARURI RUIZ ROBERT AARON";}
-else if (password=="0952310068") { document.tt.searchTerm.value ="MATAMOROS MORAN ERICKA LEONELA";}
-else if (password=="1206513275") { document.tt.searchTerm.value ="MEDINA GAMES PEGGY MARISELA";}
-else if (password=="0930694112") { document.tt.searchTerm.value ="MERINO ALVARADO JESSENIA LISSETTE";}
-else if (password=="0953506094") { document.tt.searchTerm.value ="MIELES BELEZACA ANTHONY ALEXANDER";}
-else if (password=="1004572804") { document.tt.searchTerm.value ="MINDA ESPINOZA DELICIA ELVIRA";}
-else if (password=="0943375758") { document.tt.searchTerm.value ="MOLINA QUIMI NIURKA VALESKA";}
-else if (password=="0928439298") { document.tt.searchTerm.value ="MOLINA SANCHEZ DOLORES YADIRA";}
-else if (password=="0920461670") { document.tt.searchTerm.value ="MONTERO HERNANDEZ MARIA ISABEL";}
-else if (password=="0920700184") { document.tt.searchTerm.value ="MORA CONSUEGRA ERIKA ALEXANDRA";}
-else if (password=="0925372815") { document.tt.searchTerm.value ="MORAN MUÑOZ CINDY SUSANA";}
-else if (password=="0956632988") { document.tt.searchTerm.value ="MORAN VALLE JEHOVANNA YTATY";}
-else if (password=="0928774165") { document.tt.searchTerm.value ="MORAN VILLON GIAN CARLOS";}
-else if (password=="0958623373") { document.tt.searchTerm.value ="MORENO GARCIA JORDAN ALEXANDER";}
-else if (password=="0925533416") { document.tt.searchTerm.value ="MOSCOSO SALVATIERRA FRANCISCO OSWALDO";}
-else if (password=="0930960588") { document.tt.searchTerm.value ="MUÑOZ PUEBLA LUIS ANTONIO";}
-else if (password=="0950469783") { document.tt.searchTerm.value ="NAZARENO ARTEAGA LUISA KILBER";}
-else if (password=="0926827999") { document.tt.searchTerm.value ="NEIRA BRAVO INGRID LISSETTE";}
-else if (password=="0918211152") { document.tt.searchTerm.value ="NEIRA BRAVO MERCEDES ALEXANDRA";}
-else if (password=="0952534212") { document.tt.searchTerm.value ="ORDOÑEZ MEDINA DAVID EDUARDO";}
-else if (password=="0918927922") { document.tt.searchTerm.value ="ORTEGA CASTILLO ADRIANA TERESA";}
-else if (password=="0952208759") { document.tt.searchTerm.value ="PALACIOS RIVAS SUGEY MERCEDES";}
-else if (password=="0921928859") { document.tt.searchTerm.value ="PALOMEQUE GOYES CARLOS EMILIO";}
-else if (password=="0922811906") { document.tt.searchTerm.value ="PANTA PANTA YULIANA EDITH";}
-else if (password=="1850748599") { document.tt.searchTerm.value ="PAREDES ESTRELLA GERMANIA ISABEL";}
-else if (password=="0950843417") { document.tt.searchTerm.value ="PAREDES TORRES ASHLEY NICOLE";}
-else if (password=="0944051861") { document.tt.searchTerm.value ="PEREIRA CHAPA ANDY JOSUE";}
-else if (password=="0929814291") { document.tt.searchTerm.value ="PESANTES MERA LISSETTE STEFANIA";}
-else if (password=="1400899942") { document.tt.searchTerm.value ="PILCO QUINDE JOSELINE BEATRIZ";}
-else if (password=="0950244483") { document.tt.searchTerm.value ="PIN MONTENEGRO SELENA BRIGGITTE";}
-else if (password=="0954272068") { document.tt.searchTerm.value ="PINCAY CHONILLO FERNANDO ENRIQUE";}
-else if (password=="0958711012") { document.tt.searchTerm.value ="PINCAY GARCIA GENESIS GABRIELA";}
-else if (password=="0956194906") { document.tt.searchTerm.value ="PINCAY LOOR DANIELA ESTEFANIA";}
-else if (password=="0924721897") { document.tt.searchTerm.value ="PINELA ROMERO KENYA ELIZABETH";}
-else if (password=="0928398775") { document.tt.searchTerm.value ="PONCE TAPIA CESAR ADRIAN";}
-else if (password=="0952039717") { document.tt.searchTerm.value ="PRIETO JIMENEZ NATHAN JHON";}
-else if (password=="0917154536") { document.tt.searchTerm.value ="QUIÑONEZ CHURTA ROSA ELIZABETH";}
-else if (password=="0919761676") { document.tt.searchTerm.value ="RAMOS MERCHAN CHRISTIAN OMAR";}
-else if (password=="0913113544") { document.tt.searchTerm.value ="REINA CALLE MARTHA EUGENIA";}
-else if (password=="0955422845") { document.tt.searchTerm.value ="REINA REYES AARON ISRAEL";}
-else if (password=="0955926894") { document.tt.searchTerm.value ="REVANALES PALAS JUAN FRANCISCO";}
-else if (password=="0932161235") { document.tt.searchTerm.value ="REYES SORIA JOSTIN JOSUA";}
-else if (password=="0950336271") { document.tt.searchTerm.value ="RODRIGUEZ CARRILLO RUDDY ROXANA";}
-else if (password=="0917130668") { document.tt.searchTerm.value ="RODRIGUEZ CHIRIBOGA ROBERTH WELLINGTON";}
-else if (password=="0923161582") { document.tt.searchTerm.value ="RODRIGUEZ OLAYA EMELY ELIZABETH";}
-else if (password=="0926440587") { document.tt.searchTerm.value ="ROSADO VERA MARY ELIZABETH";}
-else if (password=="0957143589") { document.tt.searchTerm.value ="SALAVARRIA PRECIADO KEYLA STEFANIA";}
-else if (password=="0929352888") { document.tt.searchTerm.value ="SALVATIERRA BAQUEDANO JORGE LUIS";}
-else if (password=="0928315605") { document.tt.searchTerm.value ="SANCHEZ ARBOLEDA DAIRA SOLANDA";}
-else if (password=="0917630949") { document.tt.searchTerm.value ="SANCHEZ MANTUANO CECILIA ALEXANDRA";}
-else if (password=="1714725734") { document.tt.searchTerm.value ="SANCHEZ MENDOZA SIDYS HERLINDA";}
-else if (password=="0920797347") { document.tt.searchTerm.value ="SANCHEZ OCHOA FRANCISCO JAVIER";}
-else if (password=="0950774927") { document.tt.searchTerm.value ="SANTOS CARDENAS MAILI ALEJANDRA";}
-else if (password=="0941634537") { document.tt.searchTerm.value ="SIMISTERRA BRAVO LAYLA GABRIELA";}
-else if (password=="0944177567") { document.tt.searchTerm.value ="SOLORZANO CARDENAS KEVIN DAVID";}
-else if (password=="1715580385") { document.tt.searchTerm.value ="TAPIA PALLASCO MARGARITA LUCIA";}
-else if (password=="0941831976") { document.tt.searchTerm.value ="TOAZA VALENCIA KEYLA SABRINA";}
-else if (password=="0957128473") { document.tt.searchTerm.value ="TOLEDO MORA POLETTE BETSAIDA";}
-else if (password=="0920913456") { document.tt.searchTerm.value ="TOMALA MOSCOL DENNIS SUGEY";}
-else if (password=="31616580") { document.tt.searchTerm.value ="TORREALBA MARQUEZ HUGO LEONARDO";}
-else if (password=="0958084105") { document.tt.searchTerm.value ="TORRES BENAVIDES ANABELLE JACQUELINE";}
-else if (password=="0924900848") { document.tt.searchTerm.value ="TUAPANTA MAIGUA FLOR MARIA";}
-else if (password=="0955829957") { document.tt.searchTerm.value ="TUMBACO ANALUISA ERICK MEDARDO";}
-else if (password=="0926788829") { document.tt.searchTerm.value ="VALAREZO PALMA DIANA ESTEFANIA";}
-else if (password=="0953221736") { document.tt.searchTerm.value ="VALENCIA ANGULO JENNIFFER ALEXANDRA";}
-else if (password=="0924357171") { document.tt.searchTerm.value ="VASQUEZ MERCHAN MAYRA FERNANDA";}
-else if (password=="0958874216") { document.tt.searchTerm.value ="VEAS ALVARADO KARINA ARACELY";}
-else if (password=="0916885155") { document.tt.searchTerm.value ="VERA TIGUA ANGELA ADELA";}
-else if (password=="0943129668") { document.tt.searchTerm.value ="VILLAMAR CHUCHUCA MARCELO JOSUE";}
-else if (password=="0950440966") { document.tt.searchTerm.value ="VILLON MORAN JESUS WILLIAM";}
-else if (password=="0940343510") { document.tt.searchTerm.value ="ZAMBRANO LARA EVELYN KATIUSKA";}
-
-
-else{
-attempt --;// Decrementing by one.
-alert("Tu tienes "+attempt+" intentos;");
-// Disabling fields after 3 attempts.
-
-
-
-if( attempt == 0){
-//document.getElementById("username").disabled = true;
-document.getElementById("password").disabled = true;
-document.getElementById("submit").disabled = true;
-return false;
-}
-}
-}
-
-
-
-		
-
- var n = 0;
-function doSearch()
-		{
-
-document.getElementById('datos').style.fontSize='12px';
-        n++;
-            if (n == 1) { document.getElementById("clicks").innerHTML = n;
-
-
-
-
-if(document.getElementById('searchTerm').value.length < 10) {
-		alert('El campo debe tener al menos 8 carácteres.');
-		}else{
-
-if(document.getElementById("datos").style.display == "block"){
-   document.getElementById("datos").style.display = "none";
-  }else{
-   document.getElementById("datos").style.display = "block";
-}
-
-
-var tableReg = document.getElementById('datos');
-			var searchText = document.getElementById('searchTerm').value.toLowerCase();
-
-	var cellsOfRow="";
-	var found=false;
-	var compareWith="";
   
-			// Recorremos todas las filas con contenido de la tabla
-			for (var i = 1; i < tableReg.rows.length; i++)
-			{
-			cellsOfRow = tableReg.rows[i].getElementsByTagName('td');
-				found = false;
-				// Recorremos todas las celdas
-				for (var j = 0; j < cellsOfRow.length && !found; j++)
-				{
-					compareWith = cellsOfRow[j].innerHTML.toLowerCase();
-					// Buscamos el texto en el contenido de la celda
-					if (searchText.length == 0 || (compareWith.indexOf(searchText) > -1))
-					{
-						found = true;
-					}
-				}
-				if(found)
-				{
-					tableReg.rows[i].style.display = '';
-
-				} else {
-					// si no ha encontrado ninguna coincidencia, esconde la
-					// fila de la tabla
-					tableReg.rows[i].style.display = 'none';
-				}
-			}
-
-}	
-
-
-
-}
-            else { document.getElementById("clicks").innerHTML = n;}
-if(n==2){location.reload();}
-
-
-
-	
-}
-
-
-
-
-
-
-
-
-
- var v = 0;
-function Srch()
-		{
-
-document.getElementById('datos2').style.fontSize='12px';
-        v++;
-            if (v == 1) { document.getElementById("clicks").innerHTML = v;
-
-
-
-
-if(document.getElementById('searchTerm').value.length < 10) {
-		alert('El campo debe tener al menos 8 carácteres.');
-		}else{
-
-if(document.getElementById("datos2").style.display == "block"){
-   document.getElementById("datos2").style.display = "none";
-  }else{
-   document.getElementById("datos2").style.display = "block";
-}
-
-
-var tableReg = document.getElementById('datos2');
-			var searchText = document.getElementById('searchTerm').value.toLowerCase();
-
-	var cellsOfRow="";
-	var found=false;
-	var compareWith="";
   
-			// Recorremos todas las filas con contenido de la tabla
-			for (var h = 1; h < tableReg.rows.length; h++)
-			{
-			cellsOfRow = tableReg.rows[h].getElementsByTagName('td');
-				found = false;
-				// Recorremos todas las celdas
-				for (var e = 0; e < cellsOfRow.length && !found; e++)
-				{
-					compareWith = cellsOfRow[e].innerHTML.toLowerCase();
-					// Buscamos el texto en el contenido de la celda
-					if (searchText.length == 0 || (compareWith.indexOf(searchText) > -1))
-					{
-						found = true;
-					}
-				}
-				if(found)
-				{
-					tableReg.rows[h].style.display = '';
-
-				} else {
-					// si no ha encontrado ninguna coincidencia, esconde la
-					// fila de la tabla
-					tableReg.rows[h].style.display = 'none';
-				}
-			}
-
-}	
-
-
-
-}
-            else { document.getElementById("clicks").innerHTML =v;}
-if(n==v){
-}
-
-
-
-	
-}
-
-
-
-var t = 0;
-function Srch2()
-		{
-document.getElementById('datos3').style.fontSize='12px';
-
-        t++;
-            if (t == 1) { document.getElementById("clicks").innerHTML = t;
-
-
-
-
-if(document.getElementById('searchTerm').value.length < 10) {
-		alert('El campo debe tener al menos 8 carácteres.');
-		}else{
-
-if(document.getElementById("datos3").style.display == "block"){
-   document.getElementById("datos3").style.display = "none";
-  }else{
-   document.getElementById("datos3").style.display = "block";
-}
-
-
-var tableReg = document.getElementById('datos3');
-			var searchText = document.getElementById('searchTerm').value.toLowerCase();
-
-	var cellsOfRow="";
-	var found=false;
-	var compareWith="";
-  
-			// Recorremos todas las filas con contenido de la tabla
-			for (var l = 1; l < tableReg.rows.length; l++)
-			{
-			cellsOfRow = tableReg.rows[l].getElementsByTagName('td');
-				found = false;
-				// Recorremos todas las celdas
-				for (var o = 0; o < cellsOfRow.length && !found; o++)
-				{
-					compareWith = cellsOfRow[o].innerHTML.toLowerCase();
-					// Buscamos el texto en el contenido de la celda
-					if (searchText.length == 0 || (compareWith.indexOf(searchText) > -1))
-					{
-						found = true;
-					}
-				}
-				if(found)
-				{
-					tableReg.rows[l].style.display = '';
-
-				} else {
-					// si no ha encontrado ninguna coincidencia, esconde la
-					// fila de la tabla
-					tableReg.rows[l].style.display = 'none';
-				}
-			}
-
-}	
-
-
-
-}
-            else { document.getElementById("clicks").innerHTML = t;}
-if(t==2){}
-
-
-
-	
-}
-
-
-
-
-
-
-</script>
-
-
-
+  </script>
 
 
 
 
 <body>
-
-<link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
-
-
-<div id="myDIV" class="login">
-	<div class="login-header">
-		<h1>Notas 2023 - 2024</h1>
-        
-        </div>
-  <div id="myDIV" class="login-form">
-  
- 
-		<form id="form_id" method="post" name="myform">
-      
-       <!--
-<h3>Nombre:</h3>
-        <input type="text" name="username" id="username"/>
-       -->
-        
-        <h3>Ingrese su CEDULA:</h3>
-        <input type="password" name="password" id="password"/>
-        <br>
-        <input type="button" value="Login" id="submit" onclick="validate()"/>
-      
-		</form>
-    <br>
-    <span >
-      <br>
-
-      <b class="note" > Nota:</b><br>
-            <b class="note" >Clave : INGRESE SU NUMERO DE CEDULA</b>
-      </span>
-           
+  <div id="myDIV" class="login">
+    <div class="login-header">
+      <h1>Notas 2023 - 2024</h1>
+          
           </div>
-</div>
+    <div id="myDIV" class="login-form">
+    
+   
+      <form id="form_id" method="post" name="myform">
         
-
-	</div>
-</div>
-
-
-
-	<h1 class="cabesilla" id="seR2" style="display:none" >Reporte de notas anuales</h1>
-
-<br>
-
-
-	<form  class="cabesilla" name="tt" id="seR"style="display:none" >NOMBRES Y APELLIDOS DEL PARTICIPANTE<br>
-
-<input disabled=”disabled” class="camb"  id="searchTerm"  required  type="text"/>
-<br><br>
-
-<input  type="button"  value="Consulta" id="submit" class="button"    onclick="doSearch()"/>
-
-<br>
-
-<!--
-
-<input  margin: 0 auto;" type="button" value="Agosto" id="submit" class="butto" onclick="Srch()"/>
-<br>
-
-
-<input  margin: 0 auto;" type="button" value="??????" id="submit" class="button" onclick="Srch2()"/>
-
--->
-
-<p style="color:#b1adad1f;"><span id="clicks"></span></p>
-	</form>
-	<p >
-<b>
-
-<table class="overa" id="datos" style="display:none"  >
-  <tr>	<th>MATERIA</th>	<th>APELLIDOS</th>	<th>CURSO</th>	<th>NOTA</th>	<th>ESTATUS</th>	<th>OBSERVACION</th>	</tr>
-  <tr>	<td>--</td>	<td>--</td>	<td>--</td>	<td>--</td>	<td>--</td>	<td>--</td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>ALEJANDRO SCHULT JHON ALAN</td>	<td>1 A</td>	<td>7,2</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>ALVARADO GUAGUA JONATHAN RONALD</td>	<td>1 A</td>	<td>6,3</td>	<td>Supletorio</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>ARIZAGA RUIZ ANDREA ESTEFANIA</td>	<td>1 A</td>	<td>9,6</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>ASTUDILO ZAMBRANO JUSTINA JACQUELINE</td>	<td>1 A</td>	<td>8,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>BANGUERA RODRIGUEZ WILMER WILSON</td>	<td>1 A</td>	<td>9,25</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>BARBERAN JARAMILLO LEIBER ARNALDO</td>	<td>1 A</td>	<td>7,75</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>CARPIO ARIZALA ALEXANDRA DEL</td>	<td>1 A</td>	<td>9,6</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>CASTRO CETRE VERONICA CIRILA</td>	<td>1 A</td>	<td>9,2</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>CHASI SINCHI STALIN JAVIER</td>	<td>1 A</td>	<td>8,12</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>CHAVEZ RODRIGUEZ MERCEDES ALEXANDRA</td>	<td>1 A</td>	<td>8,7</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>DELGADO VALVERDE ERIKA MARIA</td>	<td>1 A</td>	<td>9,32</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>GARCIA VERA CARLOS FERNANDO</td>	<td>1 A</td>	<td>9,85</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>HERRERA ESPINOZA MARIUXI JAZMIN</td>	<td>1 A</td>	<td>9,1</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>JIMENEZ CASTILLO MELANIE CAROLINA</td>	<td>1 A</td>	<td>9,85</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>LEON CEDEÑO SANDRA ELIZABETH</td>	<td>1 A</td>	<td>9,1</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>MARIN ACOSTA JONATHAN GABRIEL</td>	<td>1 A</td>	<td>8,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>MORA CONSUEGRA ERIKA ALEXANDRA</td>	<td>1 A</td>	<td>8,6</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>MOSCOSO SALVATIERRA FRANCISCO OSWALDO</td>	<td>1 A</td>	<td>8,72</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>PILCO QUINDE JOSELINE BEATRIZ</td>	<td>1 A</td>	<td>8,45</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>SOLORZANO CARDENAS KEVIN DAVID</td>	<td>1 A</td>	<td>7,5</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>TOLEDO MORA POLETTE BETSAIDA</td>	<td>1 A</td>	<td>9,2</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>VASQUEZ MERCHAN MAYRA FERNANDA</td>	<td>1 A</td>	<td>9,6</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>ALEJANDRO SCHULT JHON ALAN</td>	<td>1 A</td>	<td>7,6</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>ALVARADO GUAGUA JONATHAN RONALD</td>	<td>1 A</td>	<td>7,1</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>ARIZAGA RUIZ ANDREA ESTEFANIA</td>	<td>1 A</td>	<td>9,4</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>ASTUDILO ZAMBRANO JUSTINA JACQUELINE</td>	<td>1 A</td>	<td>9,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>BANGUERA RODRIGUEZ WILMER WILSON</td>	<td>1 A</td>	<td>9,35</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>BARBERAN JARAMILLO LEIBER ARNALDO</td>	<td>1 A</td>	<td>8</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>CARPIO ARIZALA ALEXANDRA DEL</td>	<td>1 A</td>	<td>9,5</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>CASTRO CETRE VERONICA CIRILA</td>	<td>1 A</td>	<td>9,4</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>CHASI SINCHI STALIN JAVIER</td>	<td>1 A</td>	<td>8,7</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>CHAVEZ RODRIGUEZ MERCEDES ALEXANDRA</td>	<td>1 A</td>	<td>9,4</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>DELGADO VALVERDE ERIKA MARIA</td>	<td>1 A</td>	<td>9,45</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>GARCIA VERA CARLOS FERNANDO</td>	<td>1 A</td>	<td>9,77</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>HERRERA ESPINOZA MARIUXI JAZMIN</td>	<td>1 A</td>	<td>9,85</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>JIMENEZ CASTILLO MELANIE CAROLINA</td>	<td>1 A</td>	<td>9,7</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>LEON CEDEÑO SANDRA ELIZABETH</td>	<td>1 A</td>	<td>9,75</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>MARIN ACOSTA JONATHAN GABRIEL</td>	<td>1 A</td>	<td>9,25</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>MORA CONSUEGRA ERIKA ALEXANDRA</td>	<td>1 A</td>	<td>7,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>MOSCOSO SALVATIERRA FRANCISCO OSWALDO</td>	<td>1 A</td>	<td>9,1</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>PILCO QUINDE JOSELINE BEATRIZ</td>	<td>1 A</td>	<td>9,05</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>SOLORZANO CARDENAS KEVIN DAVID</td>	<td>1 A</td>	<td>7,95</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>TOLEDO MORA POLETTE BETSAIDA</td>	<td>1 A</td>	<td>9,45</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>VASQUEZ MERCHAN MAYRA FERNANDA</td>	<td>1 A</td>	<td>9,15</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>CLAVIJO BAQUE LILIANA LISBETH</td>	<td>1 B</td>	<td>9,1</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>CORTEZ PRADO ROXANA ELIZABETH</td>	<td>1 B</td>	<td>8,7</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>GUERRERO MORA JESSICA MARIA</td>	<td>1 B</td>	<td>9,12</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>ILVIS TENELEMA FILOMENA JANNETH</td>	<td>1 B</td>	<td>9,2</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>LEON JARAMILLO LIZBETH CAROLINA</td>	<td>1 B</td>	<td>9,05</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>MARTINEZ LLANGARI JESSICA VERONICA</td>	<td>1 B</td>	<td>9,02</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>MARTINEZ LLANGARI MARTHA CECILIA</td>	<td>1 B</td>	<td>9,15</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>MARTINEZ LLANGARI OLGA MARIA</td>	<td>1 B</td>	<td>8,85</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>MARURI RUIZ ROBERT AARON</td>	<td>1 B</td>	<td></td>	<td>Supletorio</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>MONTERO HERNANDEZ MARIA ISABEL</td>	<td>1 B</td>	<td>9,3</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>NEIRA BRAVO MERCEDES ALEXANDRA</td>	<td>1 B</td>	<td>9,25</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>NEIRA BRAVO INGRID LISSETTE</td>	<td>1 B</td>	<td>9,1</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>ORDOÑEZ MEDINA DAVID EDUARDO</td>	<td>1 B</td>	<td>6,5</td>	<td>Supletorio</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>PALACIOS RIVAS SUGEY MERCEDES</td>	<td>1 B</td>	<td>9,25</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>PIN MONTENEGRO SELENA BRIGGITTE</td>	<td>1 B</td>	<td>8,4</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>PINCAY CHONILLO FERNANDO ENRIQUE</td>	<td>1 B</td>	<td>8,22</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>RAMOS MERCHAN CHRISTIAN OMAR</td>	<td>1 B</td>	<td>8,85</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>REVANALES PALAS JUAN FRANCISCO</td>	<td>1 B</td>	<td>9,27</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>REYES SORIA JOSTIN JOSUA</td>	<td>1 B</td>	<td>9,02</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>RODRIGUEZ OLAYA EMELY ELIZABETH</td>	<td>1 B</td>	<td>8,8</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>SALVATIERRA BAQUEDANO JORGE LUIS</td>	<td>1 B</td>	<td>9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>TORRES BENAVIDES ANABELLE JACQUELINE</td>	<td>1 B</td>	<td>8,4</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>TORREALBA MARQUEZ HUGO LEONARDO</td>	<td>1 B</td>	<td>9,05</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>TUMBACO ANALUISA ERICK MEDARDO</td>	<td>1 B</td>	<td>8,3</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>VALENCIA ANGULO JENNIFFER ALEXANDRA</td>	<td>1 B</td>	<td>9,5</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>VALAREZO PALMA DIANA ESTEFANIA</td>	<td>1 B</td>	<td>8,7</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>VEAS ALVARADO KARINA ARACELY</td>	<td>1 B</td>	<td>8,75</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>VILLAMAR CHUCHUCA MARCELO JOSUE</td>	<td>1 B</td>	<td></td>	<td>Supletorio</td>	<td></td>	</tr> 
-  <tr>	<td>ECA</td>	<td>CLAVIJO BAQUE LILIANA LISBETH</td>	<td>1 B</td>	<td>9,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>ECA</td>	<td>CORTEZ PRADO ROXANA ELIZABETH</td>	<td>1 B</td>	<td>9,7</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>ECA</td>	<td>GUERRERO MORA JESSICA MARIA</td>	<td>1 B</td>	<td>9,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>ECA</td>	<td>ILVIS TENELEMA FILOMENA JANNETH</td>	<td>1 B</td>	<td>9,7</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>ECA</td>	<td>LEON JARAMILLO LIZBETH CAROLINA</td>	<td>1 B</td>	<td>9,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>ECA</td>	<td>MARTINEZ LLANGARI JESSICA VERONICA</td>	<td>1 B</td>	<td>9,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>ECA</td>	<td>MARTINEZ LLANGARI MARTHA CECILIA</td>	<td>1 B</td>	<td>9,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>ECA</td>	<td>MARTINEZ LLANGARI OLGA MARIA</td>	<td>1 B</td>	<td>9,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>ECA</td>	<td>MARURI RUIZ ROBERT AARON</td>	<td>1 B</td>	<td>9,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>ECA</td>	<td>MONTERO HERNANDEZ MARIA ISABEL</td>	<td>1 B</td>	<td>9,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>ECA</td>	<td>NEIRA BRAVO MERCEDES ALEXANDRA</td>	<td>1 B</td>	<td>9,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>ECA</td>	<td>NEIRA BRAVO INGRID LISSETTE</td>	<td>1 B</td>	<td>9,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>ECA</td>	<td>ORDOÑEZ MEDINA DAVID EDUARDO</td>	<td>1 B</td>	<td>7,45</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>ECA</td>	<td>PALACIOS RIVAS SUGEY MERCEDES</td>	<td>1 B</td>	<td>9,5</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>ECA</td>	<td>PIN MONTENEGRO SELENA BRIGGITTE</td>	<td>1 B</td>	<td>9,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>ECA</td>	<td>PINCAY CHONILLO FERNANDO ENRIQUE</td>	<td>1 B</td>	<td>9,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>ECA</td>	<td>RAMOS MERCHAN CHRISTIAN OMAR</td>	<td>1 B</td>	<td>9,5</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>ECA</td>	<td>REVANALES PALAS JUAN FRANCISCO</td>	<td>1 B</td>	<td>9,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>ECA</td>	<td>REYES SORIA JOSTIN JOSUA</td>	<td>1 B</td>	<td>9,5</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>ECA</td>	<td>RODRIGUEZ OLAYA EMELY ELIZABETH</td>	<td>1 B</td>	<td>9,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>ECA</td>	<td>SALVATIERRA BAQUEDANO JORGE LUIS</td>	<td>1 B</td>	<td>9,5</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>ECA</td>	<td>TORRES BENAVIDES ANABELLE JACQUELINE</td>	<td>1 B</td>	<td>9,5</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>ECA</td>	<td>TORREALBA MARQUEZ HUGO LEONARDO</td>	<td>1 B</td>	<td>9,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>ECA</td>	<td>TUMBACO ANALUISA ERICK MEDARDO</td>	<td>1 B</td>	<td>9,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>ECA</td>	<td>VALENCIA ANGULO JENNIFFER ALEXANDRA</td>	<td>1 B</td>	<td>9,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>ECA</td>	<td>VALAREZO PALMA DIANA ESTEFANIA</td>	<td>1 B</td>	<td>9,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>ECA</td>	<td>VEAS ALVARADO KARINA ARACELY</td>	<td>1 B</td>	<td>9,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>ECA</td>	<td>VILLAMAR CHUCHUCA MARCELO JOSUE</td>	<td>1 B</td>	<td></td>	<td>Supletorio</td>	<td></td>	</tr> 
-  <tr>	<td>EMPRENDIMIENTO</td>	<td>CLAVIJO BAQUE LILIANA LISBETH</td>	<td>1 B</td>	<td>9,55</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>EMPRENDIMIENTO</td>	<td>CORTEZ PRADO ROXANA ELIZABETH</td>	<td>1 B</td>	<td>9,6</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>EMPRENDIMIENTO</td>	<td>GUERRERO MORA JESSICA MARIA</td>	<td>1 B</td>	<td>9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>EMPRENDIMIENTO</td>	<td>ILVIS TENELEMA FILOMENA JANNETH</td>	<td>1 B</td>	<td>9,6</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>EMPRENDIMIENTO</td>	<td>LEON JARAMILLO LIZBETH CAROLINA</td>	<td>1 B</td>	<td>9,35</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>EMPRENDIMIENTO</td>	<td>MARTINEZ LLANGARI JESSICA VERONICA</td>	<td>1 B</td>	<td>9,05</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>EMPRENDIMIENTO</td>	<td>MARTINEZ LLANGARI MARTHA CECILIA</td>	<td>1 B</td>	<td>9,05</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>EMPRENDIMIENTO</td>	<td>MARTINEZ LLANGARI OLGA MARIA</td>	<td>1 B</td>	<td>9,45</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>EMPRENDIMIENTO</td>	<td>MARURI RUIZ ROBERT AARON</td>	<td>1 B</td>	<td></td>	<td>Supletorio</td>	<td></td>	</tr> 
-  <tr>	<td>EMPRENDIMIENTO</td>	<td>MONTERO HERNANDEZ MARIA ISABEL</td>	<td>1 B</td>	<td>9,75</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>EMPRENDIMIENTO</td>	<td>NEIRA BRAVO MERCEDES ALEXANDRA</td>	<td>1 B</td>	<td>9,75</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>EMPRENDIMIENTO</td>	<td>NEIRA BRAVO INGRID LISSETTE</td>	<td>1 B</td>	<td>9,1</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>EMPRENDIMIENTO</td>	<td>ORDOÑEZ MEDINA DAVID EDUARDO</td>	<td>1 B</td>	<td>7,45</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>EMPRENDIMIENTO</td>	<td>PALACIOS RIVAS SUGEY MERCEDES</td>	<td>1 B</td>	<td>9,55</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>EMPRENDIMIENTO</td>	<td>PIN MONTENEGRO SELENA BRIGGITTE</td>	<td>1 B</td>	<td>9,75</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>EMPRENDIMIENTO</td>	<td>PINCAY CHONILLO FERNANDO ENRIQUE</td>	<td>1 B</td>	<td>9,7</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>EMPRENDIMIENTO</td>	<td>RAMOS MERCHAN CHRISTIAN OMAR</td>	<td>1 B</td>	<td>9,55</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>EMPRENDIMIENTO</td>	<td>REVANALES PALAS JUAN FRANCISCO</td>	<td>1 B</td>	<td>9,55</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>EMPRENDIMIENTO</td>	<td>REYES SORIA JOSTIN JOSUA</td>	<td>1 B</td>	<td>9,75</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>EMPRENDIMIENTO</td>	<td>RODRIGUEZ OLAYA EMELY ELIZABETH</td>	<td>1 B</td>	<td>9,85</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>EMPRENDIMIENTO</td>	<td>SALVATIERRA BAQUEDANO JORGE LUIS</td>	<td>1 B</td>	<td>9,05</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>EMPRENDIMIENTO</td>	<td>TORRES BENAVIDES ANABELLE JACQUELINE</td>	<td>1 B</td>	<td>9,8</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>EMPRENDIMIENTO</td>	<td>TORREALBA MARQUEZ HUGO LEONARDO</td>	<td>1 B</td>	<td>9,8</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>EMPRENDIMIENTO</td>	<td>TUMBACO ANALUISA ERICK MEDARDO</td>	<td>1 B</td>	<td>9,55</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>EMPRENDIMIENTO</td>	<td>VALENCIA ANGULO JENNIFFER ALEXANDRA</td>	<td>1 B</td>	<td>9,55</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>EMPRENDIMIENTO</td>	<td>VALAREZO PALMA DIANA ESTEFANIA</td>	<td>1 B</td>	<td>9,8</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>EMPRENDIMIENTO</td>	<td>VEAS ALVARADO KARINA ARACELY</td>	<td>1 B</td>	<td>9,7</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>EMPRENDIMIENTO</td>	<td>VILLAMAR CHUCHUCA MARCELO JOSUE</td>	<td>1 B</td>	<td>9,3</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>ARCENTALES NAVARRO WILLIAM EDWARD</td>	<td>3 B</td>	<td>8</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>BARRETO ZAMBRANO ELIAS LEONARDO</td>	<td>3 B</td>	<td>8,2</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>BAUTISTA BAYAS MARIA JOSÉ</td>	<td>3 B</td>	<td>9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>BORBOR SANTIANA ERIC ANTHONY</td>	<td>3 B</td>	<td>8,6</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>CAICEDO PERALTA ROCIO HERMINIA</td>	<td>3 B</td>	<td>9,75</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>CALI MARIN JESSICA MARGARITA</td>	<td>3 B</td>	<td>8,2</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>CALLE TOMALA DAVID RAFAEL</td>	<td>3 B</td>	<td>9,2</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>DELGADO CABRITONGO JOHANNA DEL</td>	<td>3 B</td>	<td>8,7</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>DE LA PAZ RIOS SARA NADIA</td>	<td>3 B</td>	<td>9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>EGAS VERA MIRIAM GENOVEVA</td>	<td>3 B</td>	<td>8,6</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>FERRIN OLIVES MIKE CHRISTIAN</td>	<td>3 B</td>	<td>7,2</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>FIGUEROA CHAVEZ EDWING ANDRES</td>	<td>3 B</td>	<td>8,5</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>GARCIA SALTOS JENNIFER ARELIS</td>	<td>3 B</td>	<td>8,2</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>GUADAMUD LUCAS ALLISON SCARLETH</td>	<td>3 B</td>	<td>9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>HERNANDEZ HURTADO MARLON STIVEN</td>	<td>3 B</td>	<td>8,4</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>LEON PEÑAFIEL JOSELYN CAROLINA</td>	<td>3 B</td>	<td>8,8</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>LUCAS SALTOS EMILIA MABEL</td>	<td>3 B</td>	<td>8,6</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>MEDINA GAMES PEGGY MARISELA</td>	<td>3 B</td>	<td>8</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>MERINO ALVARADO JESSENIA LISSETTE</td>	<td>3 B</td>	<td>8,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>MUÑOZ PUEBLA LUIS ANTONIO</td>	<td>3 B</td>	<td>8</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>PAREDES TORRES ASHLEY NICOLE</td>	<td>3 B</td>	<td>8</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>PEREIRA CHAPA ANDY JOSUE</td>	<td>3 B</td>	<td>8</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>PINCAY GARCIA GENESIS GABRIELA</td>	<td>3 B</td>	<td>8,5</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>QUIÑONEZ CHURTA ROSA ELIZABETH</td>	<td>3 B</td>	<td>8,3</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>REINA REYES AARON ISRAEL</td>	<td>3 B</td>	<td>8,3</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>RODRIGUEZ CARRILLO RUDDY ROXANA</td>	<td>3 B</td>	<td>9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>ROSADO VERA MARY ELIZABETH</td>	<td>3 B</td>	<td>9,4</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>SANCHEZ ARBOLEDA DAIRA SOLANDA</td>	<td>3 B</td>	<td>8,4</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>SANCHEZ MANTUANO CECILIA ALEXANDRA</td>	<td>3 B</td>	<td>8,4</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>SANCHEZ MENDOZA SIDYS HERLINDA</td>	<td>3 B</td>	<td>9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>SANTOS CARDENAS MAILI ALEJANDRA</td>	<td>3 B</td>	<td>8,6</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>SIMISTERRA BRAVO LAYLA GABRIELA</td>	<td>3 B</td>	<td>9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>TOMALA MOSCOL DENNIS SUGEY</td>	<td>3 B</td>	<td>8,8</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>TUAPANTA MAIGUA FLOR MARIA</td>	<td>3 B</td>	<td>9,3</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>ZAMBRANO LARA EVELYN KATIUSKA</td>	<td>3 B</td>	<td>9,3</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>ALMEIDA DUEÑAS EMYLI YULISSA</td>	<td>2 A</td>	<td>8,7</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>AMBI JIMENEZ JULIO CESAR</td>	<td>2 A</td>	<td>8,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>ANGULO VERA JENNIFFER JOHANA</td>	<td>2 A</td>	<td>9,5</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>ARANA CARDENAS ZULLY JOSELYN</td>	<td>2 A</td>	<td>9,7</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>ASENCIO FRANCO CARLOS ALFREDO</td>	<td>2 A</td>	<td>8,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>AYLLÓN LITARDO ODALIS PAULETTE</td>	<td>2 A</td>	<td>8,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>BARROS ORTONEDA ELIAS ENRIQUE</td>	<td>2 A</td>	<td>9,7</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>BENAVIDES LEMA RUTH JAQUELIN</td>	<td>2 A</td>	<td>8,4</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>CABELLO QUIÑONEZ KERLY KATHERINE</td>	<td>2 A</td>	<td>9,5</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>CAMPOVERDE SUQUITANA MERCEDES LETICIA</td>	<td>2 A</td>	<td>8</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>CHICAIZA JIMENEZ DANIEL WASHINGTON</td>	<td>2 A</td>	<td>9,1</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>COELLO MURILLO CINTHYA NAOMI</td>	<td>2 A</td>	<td>9,3</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>CONFORME ANDRADE RUTH ELIZABETH</td>	<td>2 A</td>	<td>9,3</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>CORTEZ MARQUINEZ DIANA MARIELA</td>	<td>2 A</td>	<td>9,3</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>DI LORENZO LORENZO FUENTES KIARA</td>	<td>2 A</td>	<td>8,7</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>FREIRE ESPINOZA VALESKA NATALIA</td>	<td>2 A</td>	<td>9,7</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>GRANILLO CALDERON JOSE FREDDY</td>	<td>2 A</td>	<td>8,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>HERNANDEZ DELGADO GINGER PAULINA</td>	<td>2 A</td>	<td>9,3</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>IBARRA LEON ANTHONY DAMIAN</td>	<td>2 A</td>	<td>8,1</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>LOZANO SINCHI MARIA RAQUEL</td>	<td>2 A</td>	<td>9,1</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>MINDA ESPINOZA DELICIA ELVIRA</td>	<td>2 A</td>	<td>9,1</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>MOLINA QUIMI NIURKA VALESKA</td>	<td>2 A</td>	<td>9,3</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>NAZARENO ARTEAGA LUISA KILBER</td>	<td>2 A</td>	<td>9,1</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>ORTEGA CASTILLO ADRIANA TERESA</td>	<td>2 A</td>	<td>9,3</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>PALOMEQUE GOYES CARLOS EMILIO</td>	<td>2 A</td>	<td>8,3</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>PANTA PANTA YULIANA EDITH</td>	<td>2 A</td>	<td>9,3</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>PAREDES ESTRELLA GERMANIA ISABEL</td>	<td>2 A</td>	<td>9,3</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>PESANTES MERA LISSETTE STEFANIA</td>	<td>2 A</td>	<td>9,3</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>PINELA ROMERO KENYA ELIZABETH</td>	<td>2 A</td>	<td>9,1</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>RODRIGUEZ CHIRIBOGA ROBERTH WELLINGTON</td>	<td>2 A</td>	<td>8,2</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>SALAVARRIA PRECIADO KEYLA STEFANIA</td>	<td>2 A</td>	<td>9,1</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>SANCHEZ OCHOA FRANCISCO JAVIER</td>	<td>2 A</td>	<td>9,3</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>TAPIA PALLASCO MARGARITA LUCIA</td>	<td>2 A</td>	<td>9,3</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>VERA TIGUA ANGELA ADELA</td>	<td>2 A</td>	<td>9,3</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>ANDRADE PARRAGA KATHERINE ADRIANA</td>	<td>3 A</td>	<td>8,05</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>AYOVI YUMICELA MARIA SOLEDAD</td>	<td>3 A</td>	<td>9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>BENAVIDES MORENO ALVARO ERNESTO</td>	<td>3 A</td>	<td>7,25</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>CAICEDO RODRIGUEZ JOSUE RAUL</td>	<td>3 A</td>	<td>8,15</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>CASIERRA LAJONES RICHAR ALBERTO</td>	<td>3 A</td>	<td>9,25</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>CHAVEZ ZAMBRANO PABLO ISAIAS</td>	<td>3 A</td>	<td>9,3</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>CISNEROS COTO DIANA CAROLINA</td>	<td>3 A</td>	<td>9,15</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>COROZO CAICEDO KARELY DALILA</td>	<td>3 A</td>	<td>7,95</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>DÍAZ GUILLEN ADRIAN ALEJANDRO</td>	<td>3 A</td>	<td>8,55</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>FAJARDO SAMANIEGO ODALYS YAMILETH</td>	<td>3 A</td>	<td>8,15</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>FIGUEROA MOSCOSO RUTH BERONICA</td>	<td>3 A</td>	<td>9,15</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>GARCIA VERA JESSENIA ISABEL</td>	<td>3 A</td>	<td>8,95</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>GONZALEZ ARVELAEZ NELCYS ALEJANDRA</td>	<td>3 A</td>	<td>8,25</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>GRUEZO MONTAÑO TANIA ESTEFANIA</td>	<td>3 A</td>	<td>8,3</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>JORDAN ROMERO JOHNNY WILLIAMS</td>	<td>3 A</td>	<td>7,85</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>JOUTTEAUX CORONEL KATTYUSCA MARIELA</td>	<td>3 A</td>	<td>9,1</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>JOUTTEAUX CORONEL ROXANA ELIZABETH</td>	<td>3 A</td>	<td>9,2</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>LARA ESPAÑA JUAN JOSÉ</td>	<td>3 A</td>	<td>8,1</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>LEM FERNANDEZ EVELYN AMELIA</td>	<td>3 A</td>	<td>8,8</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>LOPEZ COCHEA JONATHAN SAUL</td>	<td>3 A</td>	<td>8,85</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>MACIAS MERA MAGDALENA ELIZABETH</td>	<td>3 A</td>	<td>8,95</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>MALDONADO PELCHOR SARA LETICIA</td>	<td>3 A</td>	<td>9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>MARTINEZ ALLAUCA GEOVANNY ALEJANDRO</td>	<td>3 A</td>	<td>8,65</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>MATAMOROS MORAN ERICKA LEONELA</td>	<td>3 A</td>	<td>8,75</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>MIELES BELEZACA ANTHONY ALEXANDER</td>	<td>3 A</td>	<td>3,5</td>	<td>Supletorio</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>MOLINA SANCHEZ DOLORES YADIRA</td>	<td>3 A</td>	<td>8,85</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>MORAN MUÑOZ CINDY SUSANA</td>	<td>3 A</td>	<td>8,55</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>MORAN VALLE JEHOVANNA YTATY</td>	<td>3 A</td>	<td>8,25</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>MORAN VILLON GIAN CARLOS</td>	<td>3 A</td>	<td>8,85</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>MORENO GARCIA JORDAN ALEXANDER</td>	<td>3 A</td>	<td>8,1</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>PINCAY LOOR DANIELA ESTEFANIA</td>	<td>3 A</td>	<td>7,65</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>PONCE TAPIA CESAR ADRIAN</td>	<td>3 A</td>	<td>8,15</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>PRIETO JIMENEZ NATHAN JHON</td>	<td>3 A</td>	<td>7,7</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>REINA CALLE MARTHA EUGENIA</td>	<td>3 A</td>	<td>9,6</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>TOAZA VALENCIA KEYLA SABRINA</td>	<td>3 A</td>	<td>8,55</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>FISICA</td>	<td>VILLON MORAN JESUS WILLIAM</td>	<td>3 A</td>	<td>8,65</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>ANDRADE PARRAGA KATHERINE ADRIANA</td>	<td>3 A</td>	<td>8,35</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>AYOVI YUMICELA MARIA SOLEDAD</td>	<td>3 A</td>	<td>8,65</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>BENAVIDES MORENO ALVARO ERNESTO</td>	<td>3 A</td>	<td>8,7</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>CAICEDO RODRIGUEZ JOSUE RAUL</td>	<td>3 A</td>	<td>8,85</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>CASIERRA LAJONES RICHAR ALBERTO</td>	<td>3 A</td>	<td>9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>CHAVEZ ZAMBRANO PABLO ISAIAS</td>	<td>3 A</td>	<td>8,95</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>CISNEROS COTO DIANA CAROLINA</td>	<td>3 A</td>	<td>8,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>COROZO CAICEDO KARELY DALILA</td>	<td>3 A</td>	<td>8,5</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>DÍAZ GUILLEN ADRIAN ALEJANDRO</td>	<td>3 A</td>	<td>8,8</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>FAJARDO SAMANIEGO ODALYS YAMILETH</td>	<td>3 A</td>	<td>8,85</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>FIGUEROA MOSCOSO RUTH BERONICA</td>	<td>3 A</td>	<td>8,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>GARCIA VERA JESSENIA ISABEL</td>	<td>3 A</td>	<td>9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>GONZALEZ ARVELAEZ NELCYS ALEJANDRA</td>	<td>3 A</td>	<td>8,7</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>GRUEZO MONTAÑO TANIA ESTEFANIA</td>	<td>3 A</td>	<td>9,05</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>JORDAN ROMERO JOHNNY WILLIAMS</td>	<td>3 A</td>	<td>8,75</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>JOUTTEAUX CORONEL KATTYUSCA MARIELA</td>	<td>3 A</td>	<td>9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>JOUTTEAUX CORONEL ROXANA ELIZABETH</td>	<td>3 A</td>	<td>8,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>LARA ESPAÑA JUAN JOSÉ</td>	<td>3 A</td>	<td>8,75</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>LEM FERNANDEZ EVELYN AMELIA</td>	<td>3 A</td>	<td>8,75</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>LOPEZ COCHEA JONATHAN SAUL</td>	<td>3 A</td>	<td>8,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>MACIAS MERA MAGDALENA ELIZABETH</td>	<td>3 A</td>	<td>8,85</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>MALDONADO PELCHOR SARA LETICIA</td>	<td>3 A</td>	<td>8,75</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>MARTINEZ ALLAUCA GEOVANNY ALEJANDRO</td>	<td>3 A</td>	<td>8,85</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>MATAMOROS MORAN ERICKA LEONELA</td>	<td>3 A</td>	<td>8,85</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>MIELES BELEZACA ANTHONY ALEXANDER</td>	<td>3 A</td>	<td>2,55</td>	<td>Supletorio</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>MOLINA SANCHEZ DOLORES YADIRA</td>	<td>3 A</td>	<td>8,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>MORAN MUÑOZ CINDY SUSANA</td>	<td>3 A</td>	<td>8,8</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>MORAN VALLE JEHOVANNA YTATY</td>	<td>3 A</td>	<td>8,75</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>MORAN VILLON GIAN CARLOS</td>	<td>3 A</td>	<td>8,25</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>MORENO GARCIA JORDAN ALEXANDER</td>	<td>3 A</td>	<td>8,75</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>PINCAY LOOR DANIELA ESTEFANIA</td>	<td>3 A</td>	<td>8,3</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>PONCE TAPIA CESAR ADRIAN</td>	<td>3 A</td>	<td>8,5</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>PRIETO JIMENEZ NATHAN JHON</td>	<td>3 A</td>	<td>8,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>REINA CALLE MARTHA EUGENIA</td>	<td>3 A</td>	<td>8,85</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>TOAZA VALENCIA KEYLA SABRINA</td>	<td>3 A</td>	<td>8,9</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>QUIMICA</td>	<td>VILLON MORAN JESUS WILLIAM</td>	<td>3 A</td>	<td>8,8</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>ANDRADE PARRAGA KATHERINE ADRIANA</td>	<td>3 A</td>	<td>8,85</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>AYOVI YUMICELA MARIA SOLEDAD</td>	<td>3 A</td>	<td>9,5</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>BENAVIDES MORENO ALVARO ERNESTO</td>	<td>3 A</td>	<td>9,5</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>CAICEDO RODRIGUEZ JOSUE RAUL</td>	<td>3 A</td>	<td>9,3</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>CASIERRA LAJONES RICHAR ALBERTO</td>	<td>3 A</td>	<td>8,95</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>CHAVEZ ZAMBRANO PABLO ISAIAS</td>	<td>3 A</td>	<td>8,95</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>CISNEROS COTO DIANA CAROLINA</td>	<td>3 A</td>	<td>9,35</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>COROZO CAICEDO KARELY DALILA</td>	<td>3 A</td>	<td>9,5</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>DÍAZ GUILLEN ADRIAN ALEJANDRO</td>	<td>3 A</td>	<td>9,5</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>FAJARDO SAMANIEGO ODALYS YAMILETH</td>	<td>3 A</td>	<td>9,4</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>FIGUEROA MOSCOSO RUTH BERONICA</td>	<td>3 A</td>	<td>9,35</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>GARCIA VERA JESSENIA ISABEL</td>	<td>3 A</td>	<td>9,35</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>GONZALEZ ARVELAEZ NELCYS ALEJANDRA</td>	<td>3 A</td>	<td>9,3</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>GRUEZO MONTAÑO TANIA ESTEFANIA</td>	<td>3 A</td>	<td>9,35</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>JORDAN ROMERO JOHNNY WILLIAMS</td>	<td>3 A</td>	<td>9,3</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>JOUTTEAUX CORONEL KATTYUSCA MARIELA</td>	<td>3 A</td>	<td>9,35</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>JOUTTEAUX CORONEL ROXANA ELIZABETH</td>	<td>3 A</td>	<td>9,35</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>LARA ESPAÑA JUAN JOSÉ</td>	<td>3 A</td>	<td>9,3</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>LEM FERNANDEZ EVELYN AMELIA</td>	<td>3 A</td>	<td>9,25</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>LOPEZ COCHEA JONATHAN SAUL</td>	<td>3 A</td>	<td>9,35</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>MACIAS MERA MAGDALENA ELIZABETH</td>	<td>3 A</td>	<td>9,15</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>MALDONADO PELCHOR SARA LETICIA</td>	<td>3 A</td>	<td>9,1</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>MARTINEZ ALLAUCA GEOVANNY ALEJANDRO</td>	<td>3 A</td>	<td>9,05</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>MATAMOROS MORAN ERICKA LEONELA</td>	<td>3 A</td>	<td>8,65</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>MIELES BELEZACA ANTHONY ALEXANDER</td>	<td>3 A</td>	<td>2,4</td>	<td>Supletorio</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>MOLINA SANCHEZ DOLORES YADIRA</td>	<td>3 A</td>	<td>9,35</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>MORAN MUÑOZ CINDY SUSANA</td>	<td>3 A</td>	<td>9,35</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>MORAN VALLE JEHOVANNA YTATY</td>	<td>3 A</td>	<td>9,5</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>MORAN VILLON GIAN CARLOS</td>	<td>3 A</td>	<td>8,85</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>MORENO GARCIA JORDAN ALEXANDER</td>	<td>3 A</td>	<td>8,65</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>PINCAY LOOR DANIELA ESTEFANIA</td>	<td>3 A</td>	<td>8,6</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>PONCE TAPIA CESAR ADRIAN</td>	<td>3 A</td>	<td>8,4</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>PRIETO JIMENEZ NATHAN JHON</td>	<td>3 A</td>	<td>8,8</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>REINA CALLE MARTHA EUGENIA</td>	<td>3 A</td>	<td>9,05</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>TOAZA VALENCIA KEYLA SABRINA</td>	<td>3 A</td>	<td>9,5</td>	<td>Aprobado</td>	<td></td>	</tr> 
-  <tr>	<td>BIOLOGIA</td>	<td>VILLON MORAN JESUS WILLIAM</td>	<td>3 A</td>	<td>9,55</td>	<td>Aprobado</td>	<td></td>	</tr> 
+         <!--
+  <h3>Nombre:</h3>
+          <input type="text" name="username" id="username"/>
+         -->
+          
+          <h3>Ingrese su CEDULA:</h3>
+          <input type="password" name="password" id="password"/>
+          <br>
+          <input type="button" value="Login" id="submit" onclick="validate()"/>
+        
+      </form>
+      <br>
+      <span >
+        <br>
   
-</table>
-</b>
-	</p>
+        <b class="note" > Nota:</b><br>
+              <b class="note" >Clave : INGRESE SU NUMERO DE CEDULA</b>
+        </span>
+             
+            </div>
+  </div>
+          
+  
+    </div>
+  </div>
+  
+  
+  
+    <h1 class="cabesilla" id="seR2" style="display:none" >Reporte de notas anuales</h1>
+  
+  <br>
+  
+  
+    <form  class="cabesilla" name="tt" id="seR"style="display:none" >NOMBRES Y APELLIDOS DEL PARTICIPANTE<br>
+  
+  <input disabled=”disabled” class="camb"  id="searchTerm"  required  type="text"/>
+  <br><br>
+  
+  <input  type="button"  value="Consulta" id="submit" class="button"    onclick="doSearch()"/>
+  
+  <br>
+  
+  <!--
+  
+  <input  margin: 0 auto;" type="button" value="Agosto" id="submit" class="butto" onclick="Srch()"/>
+  <br>
+  
+  
+  <input  margin: 0 auto;" type="button" value="??????" id="submit" class="button" onclick="Srch2()"/>
+  
+  -->
+  
+  <p style="color:#b1adad1f;"><span id="clicks"></span></p>
+    </form>
+    <p >
+  <b>
 
-<br>
+  <table class="overa" id="datos" style="display:none"  >
+     <thead>
+      <tr>
+        <th>NUM</th>
+        <th>APELLIDOS</th>
+        <th>MATERIA</th>
+        <th>CEDULA</th>
+        <th>CURSO</th>
+        <th>NOTA</th>
+        <th>ESTATUS</th>
+        <th>OBSERVACION</th>
+      </tr>
+    </thead>
+    <tbody id="data">
+    </tbody>
+  </table>
+  </b>
+    <br>
+  
+    <script>
+      let url = 'https://script.googleusercontent.com/macros/echo?user_content_key=Uh58X78Ek5cCUxtOUVQ4ZILWhZsk9RMSBomrRM4u5q7zCS6-UFVa2TIdnlr8EasQDsc18qpBHC0svhyvCWCVyFlT5jbr3b_0m5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnLSwP4cjU8kWc9zP32_HeEJUgG97g7aIAPjgJXEfEXynWe1HNwup5H2TdWHYNjYIUra2kHOqAYTrsjQuXMJcya5TpI12rXvQSw&lib=M5wym2yEXjS1JvFbBJq5ZSXr8NzWGHazY';
+      let mapa= new Map();
+    
+      fetch(url)
+            .then( response => response.json() )
+            .then( data => {
+              mostrarData(data)
+            } )
+            .catch( error => console.log(error) )
+                
+        const mostrarData = (data) => {
+          contador= data.user
+         
+          let body = ""
+          contador.forEach(alumno => {
+    //     console.log(alumno.CEDULA)
+   
+mapa.set(alumno.CEDULA,alumno.APELLIDOS);
+         body+=`<tr>
+              <td>${alumno.CONT}</td>
+              <td>${alumno.APELLIDOS}</td>
+              <td>${alumno.MATERIA}</td>
+              <td>${alumno.CEDULA}</td>
+              <td>${alumno.CURSO}</td>
+              <td>${alumno.NOTA}</td>
+              <td>${alumno.ESTATUS}</td>
+              <td>${alumno.OBSERVACION}</td>
 
-<p >
-
-
-<table class="overa" id="datos2" style="display:none" >
+            </tr>`  
 
 
 
-		</table>
-	</p>
+          });
+          document.getElementById('data').innerHTML = body
+
+        }
+/************************ttttttttttttttttttttttttttttttttttttttttt************************************/
+var attempt = 3; // Variable to count number of attempts.
+  // Below function Executes on click of login button.
+  
+function validate(){
+  
+  document.getElementById("myDIV").style.display = "none";
+  document.getElementById("seR").style.display = "initial";
+  document.getElementById("seR2").style.display = "initial";
+ 
+ //var username = document.getElementById("username").value;
+ var password = document.getElementById("password").value;
+ //console.log(mapa.get(password) + "---l");
+ 
+mapa.forEach((value, key) => {
+
+//console.log(`+> ${value}  ` +"  <-->  " +mapa.get(password)  )
+  if (`${value}`== mapa.get(password) ){
+   // console.log(`+> ${value}  ` +"  <-->  " +mapa.get(password)  )
+    document.tt.searchTerm.value =value;
+  }})
+
+    if ( password == "987654321"){
+      //console.log(mapa);
+    //  let apellido=(mapa.get(password));
+    // alert ("ACCESO A TUTOR");
+    //window.location = "https://www-drv.com/site/ipiyyiarnmnz2hdsreamyg/SanLuis/Paginas/TABLAPRINCIPAL.html"; // Redirecting to other page.
+   }
+ 
+ //Decimo
+  
+      else{
+      attempt --;// Decrementing by one.
+     // alert("Tu tienes "+attempt+" intentos;");
+      // Disabling fields after 3 attempts.
+      
+      
+      
+            if( attempt == 0){
+            //document.getElementById("username").disabled = true;
+            document.getElementById("password").disabled = true;
+            document.getElementById("submit").disabled = true;
+            return false;
+            }
+      }
+ }
+ 
+ 
+ 
+     
+ 
+  var n = 0;
+  
+ function doSearch()      {
+ document.getElementById('datos').style.fontSize='12px';
+         n++;
+             if (n == 1) { document.getElementById("clicks").innerHTML = n;
+ 
+ 
+ 
+ 
+ if(document.getElementById('searchTerm').value.length < 10) {
+     alert('El campo debe tener al menos 8 carácteres.');
+     }else{
+ 
+ if(document.getElementById("datos").style.display == "block"){
+    document.getElementById("datos").style.display = "none";
+   }else{
+    document.getElementById("datos").style.display = "block";
+ }
+ 
+ 
+ var tableReg = document.getElementById('datos');
+       var searchText = document.getElementById('searchTerm').value.toLowerCase();
+ 
+   var cellsOfRow="";
+   var found=false;
+   var compareWith="";
+   
+       // Recorremos todas las filas con contenido de la tabla
+       for (var i = 1; i < tableReg.rows.length; i++)
+       {
+       cellsOfRow = tableReg.rows[i].getElementsByTagName('td');
+         found = false;
+         // Recorremos todas las celdas
+         for (var j = 0; j < cellsOfRow.length && !found; j++)
+         {
+           compareWith = cellsOfRow[j].innerHTML.toLowerCase();
+           // Buscamos el texto en el contenido de la celda
+           if (searchText.length == 0 || (compareWith.indexOf(searchText) > -1))
+           {
+             found = true;
+           }
+         }
+         if(found)
+         {
+           tableReg.rows[i].style.display = '';
+ 
+         } else {
+           // si no ha encontrado ninguna coincidencia, esconde la
+           // fila de la tabla
+           tableReg.rows[i].style.display = 'none';
+         }
+       }
+ 
+ }	
+  }
+             else { document.getElementById("clicks").innerHTML = n;}
+ if(n==2){location.reload();}
+   
+ }
+ 
+  var v = 0;
+
+ 
+ 
+ var t = 0;
+
+ 
+ 
+ 
+ 
+ 
 
 
-
-<p >
-
-
-<table class="overa" id="datos3" style="display:none" >
-
-
-
-
-
-
-		</table>
-	</p>
-
-
+    </script>
 </body>
 </html>
