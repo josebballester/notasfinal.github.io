@@ -277,7 +277,7 @@
          
           let body = ""
           contador.forEach(alumno => {
-    //     console.log(alumno.CEDULA)
+console.log(alumno.CEDULA)
    
 mapa.set(alumno.CEDULA,alumno.APELLIDOS);
          body+=`<tr>
@@ -313,10 +313,10 @@ function validate(){
  //console.log(mapa.get(password) + "---l");
  
 mapa.forEach((value, key) => {
-
+  //console.log(`+> ${value}  ` +"  <-->  " +mapa.get(password)  )
 //console.log(`+> ${value}  ` +"  <-->  " +mapa.get(password)  )
   if (`${value}`== mapa.get(password) ){
-   // console.log(`+> ${value}  ` +"  <-->  " +mapa.get(password)  )
+    
     document.tt.searchTerm.value =value;
   }})
 
@@ -359,7 +359,7 @@ mapa.forEach((value, key) => {
  
  
  
- if(document.getElementById('searchTerm').value.length < 10) {
+ if(document.getElementById('searchTerm').value.length < 11) {
      alert('El campo debe tener al menos 8 carácteres.');
      }else{
  
@@ -404,25 +404,21 @@ mapa.forEach((value, key) => {
        }
  
  }	
-  }
+ 
+ 
+ 
+ }
              else { document.getElementById("clicks").innerHTML = n;}
  if(n==2){location.reload();}
    
  }
  
   var v = 0;
-
- 
- 
  var t = 0;
-
- 
- 
- 
- 
- 
-
-
     </script>
+
+
+
+
 </body>
 </html>
