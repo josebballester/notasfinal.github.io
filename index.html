@@ -1,435 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
-    <title>Notas Leonidas</title>
 
-    <style type="text/css">
-      body {
-       
-        background-color:#013A3A;
-        
-       }
-    h1, h2, h3, h4, h5, h6, a {
-      margin:0; padding:0;
-    }
-    
-    .login {
-      margin:0 auto;
-      max-width:500px;
-    }
-    .login-header {
-      color:#fff;
-      text-align:center;
-      font-size:100%;
-    }
-    /* .login-header h1 {
-       text-shadow: 0px 5px 15px #000; */
-       .note{
-      color:#fff;
-    }
-    .cabesilla{  
-      color:#fff;
-    }
-       table {margin:auto;}
-    table {
-        border-collapse: collapse;
-        width: 100%;
-    }
-    table, td, th {    
-        border: 1px solid #ddd;
-        text-align: left;
-    }
-    th, td {
-        text-align: left;
-        padding: 8px;
-    }
-    
-    tr:nth-child(even){background-color: #fff2f2}
-    
-    th {
-        background-color: #4CAF50;
-        color: white;
-    }
-    td {
-        background-color: #213821;
-        color: white;
-    }   
-    .login-form h3 {
-      text-align:left;
-      margin-left:40px;
-      color:#fff;
-    }
-    .login-form {
-      box-sizing:border-box;
-      padding-top:15px;
-      padding-bottom:10%;
-      margin:5% auto;
-      text-align:center;
-    }
-    .login input[type="text"],
-    .login input[type="password"] {
-      max-width:400px;
-      width: 80%;
-      line-height:3em;
-      font-family: 'Ubuntu', sans-serif;
-      margin:1em 2em;
-      border-radius:5px;
-      border:2px solid #f2f2f2;
-      outline:none;
-      padding-left:10px;
-    }
-    .login-form input[type="button"] {
-      height:30px;
-      width:100px;
-      background:#fff;
-      border:1px solid #f2f2f2;
-      border-radius:20px;
-      color: slategrey;
-      text-transform:uppercase;
-      font-family: 'Ubuntu', sans-serif;
-      cursor:pointer;
-    }
-    .sign-up{
-      color:#f2f2f2;
-      margin-left:-70%;
-      cursor:pointer;
-      text-decoration:underline;
-    }
-    .no-access {
-      color:#E86850;
-      margin:20px 0px 20px -57%;
-      text-decoration:underline;
-      cursor:pointer;
-    }
-    .try-again {
-      color:#f2f2f2;
-      text-decoration:underline;
-      cursor:pointer;
-    }
-    
-    /*Media Querie*/
-    @media only screen and (min-width : 150px) and (max-width : 530px){
-      .login-form h3 {
-        text-align:center;
-        margin:0;
-      }
-      .sign-up, .no-access {
-        margin:10px 0;
-      }
-      .login-button {
-        margin-bottom:10px;
-      }
-    }
-    
-    #myDIV {
-        width: 500px;
-        height: 500px;
-    
-    }
-    
-    .camb{ 
-      width:40em;
-      color: #ebe5e5;}
-    
-    .button {
-        display: inline-block;
-      border-radius: 99px;
-      background-color: #f4511e;
-      border: none;
-      color: #FFFFFF;
-      text-align: center;
-      font-size: 12px;
-      padding: 5px;
-      width: 100px;
-      transition: all 0.5s;
-      cursor: pointer;
-      margin: 5px;
-    }
-    .butto {
-        display: inline-block;
-      border-radius: 99px;
-      background-color: #3223ff;
-      border: none;
-      color: #FFFFFF;
-      text-align: center;
-      font-size: 12px;
-      padding: 5px;
-      width: 100px;
-      transition: all 0.5s;
-      cursor: pointer;
-      margin: 5px;
-    }
-    </style>
+	<style>
+
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'poppins', sans-serif;
+	font-size: 18px;
+}
+body{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.container{
+	width: 500px;
+	padding: 30px;
+	border: 1px solid #eeeeee;
+	border-radius: 10px;
+	background-color: #003b5b;
+}
+h4{
+	margin-bottom: 10px;
+	font-size: 24px;
+	color: white;
+}
+input{
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+textarea{
+	width: 100%;
+	padding: 10px;
+}
+#submit{
+	border: none;
+	background-color: orangered;
+	color: white;
+	width: 200px;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+#submit:hover{
+	background-color: #333333;
+}
+
+	</style>
 </head>
-
-<script type="text/javascript">
-  
-  
-  </script>
-
-
-
-
 <body>
-  <div id="myDIV" class="login">
-    <div class="login-header">
-      <h1>Notas 2023 - 2024</h1>
-          
-          </div>
-    <div id="myDIV" class="login-form">
-    
-   
-      <form id="form_id" method="post" name="myform">
-        
-         <!--
-  <h3>Nombre:</h3>
-          <input type="text" name="username" id="username"/>
-         -->
-          
-          <h3>Ingrese su CEDULA:</h3>
-          <input type="password" name="password" id="password"/>
-          <br>
-          <input type="button" value="Login" id="submit" onclick="validate()"/>
-        
-      </form>
-      <br>
-      <span >
-        <br>
-  
-        <b class="note" > Nota:</b><br>
-              <b class="note" >Clave : INGRESE SU NUMERO DE CEDULA</b>
-        </span>
-             
-            </div>
-  </div>
-          
-  
-    </div>
-  </div>
-  
-  
-  
-    <h1 class="cabesilla" id="seR2" style="display:none" >Reporte de notas anuales</h1>
-  
-  <br>
-  
-  
-    <form  class="cabesilla" name="tt" id="seR"style="display:none" >NOMBRES Y APELLIDOS DEL PARTICIPANTE<br>
-  
-  <input disabled=”disabled” class="camb"  id="searchTerm"  required  type="text"/>
-  <br><br>
-  
-  <input  type="button"  value="Consulta" id="submit" class="button"    onclick="doSearch()"/>
-  
-  <br>
-  
-  <!--
-  
-  <input  margin: 0 auto;" type="button" value="Agosto" id="submit" class="butto" onclick="Srch()"/>
-  <br>
-  
-  
-  <input  margin: 0 auto;" type="button" value="??????" id="submit" class="button" onclick="Srch2()"/>
-  
-  -->
-  
-  <p style="color:#b1adad1f;"><span id="clicks"></span></p>
-    </form>
-    <p >
-  <b>
+	<div class="container">
+		<form method="post" action="https://script.google.com/macros/s/AKfycbydW5A4qJHPZpLSeU-vh8En1MRZomK9UsGyX5PUIy-llag0drlSCbxbYpmzt4lT9FoYmw/exec" name="contact-form">
+			<h4>Contact Us</h4>
+			<input type="text" name="your-name" placeholder="Name">
+			<input type="text" name="your-number" placeholder="Number">
+			<input type="email" name="your-email" placeholder="Email">
+			<textarea name="message" rows="7" placeholder="Your Message"></textarea>
+			<input type="submit" value="Submit" id="submit">
+		</form>
+		
+		<button onclick="myFunction()">Click me</button>
+	</div>
 
-  <table class="overa" id="datos" style="display:none"  >
-     <thead>
-      <tr>
-        <th>NUM</th>
-        <th>APELLIDOS</th>
-        <th>MATERIA</th>
-        <th>CEDULA</th>
-        <th>CURSO</th>
-        <th>NOTA</th>
-        <th>ESTATUS</th>
-        <th>OBSERVACION</th>
-      </tr>
-    </thead>
-    <tbody id="data">
-    </tbody>
-  </table>
-  </b>
-    <br>
-  
-    <script>
-      let url = 'https://script.googleusercontent.com/macros/echo?user_content_key=Uh58X78Ek5cCUxtOUVQ4ZILWhZsk9RMSBomrRM4u5q7zCS6-UFVa2TIdnlr8EasQDsc18qpBHC0svhyvCWCVyFlT5jbr3b_0m5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnLSwP4cjU8kWc9zP32_HeEJUgG97g7aIAPjgJXEfEXynWe1HNwup5H2TdWHYNjYIUra2kHOqAYTrsjQuXMJcya5TpI12rXvQSw&lib=M5wym2yEXjS1JvFbBJq5ZSXr8NzWGHazY';
-      let mapa= new Map();
-    
-      fetch(url)
-            .then( response => response.json() )
-            .then( data => {
-              mostrarData(data)
-            } )
-            .catch( error => console.log(error) )
-                
-        const mostrarData = (data) => {
-          contador= data.user
-         
-          let body = ""
-          contador.forEach(alumno => {
-console.log(alumno.CEDULA)
-   
-mapa.set(alumno.CEDULA,alumno.APELLIDOS);
-         body+=`<tr>
-              <td>${alumno.CONT}</td>
-              <td>${alumno.APELLIDOS}</td>
-              <td>${alumno.MATERIA}</td>
-              <td>${alumno.CEDULA}</td>
-              <td>${alumno.CURSO}</td>
-              <td>${alumno.NOTA}</td>
-              <td>${alumno.ESTATUS}</td>
-              <td>${alumno.OBSERVACION}</td>
+	<script>
 
-            </tr>`  
+		function myFunction() {
+		  
+		  window.location.replace("https://www.youtube.com/watch?v=-4MUfUETKMg");
+		}
+		</script>
+	<script>
+		const scriptURL = 
+		'https://script.google.com/macros/s/AKfycbydW5A4qJHPZpLSeU-vh8En1MRZomK9UsGyX5PUIy-llag0drlSCbxbYpmzt4lT9FoYmw/exec'
+		alert("ssss");
+const form = document.forms['contact-form']
 
-
-
-          });
-          document.getElementById('data').innerHTML = body
-
-        }
-/************************ttttttttttttttttttttttttttttttttttttttttt************************************/
-var attempt = 3; // Variable to count number of attempts.
-  // Below function Executes on click of login button.
-  
-function validate(){
-  
-  document.getElementById("myDIV").style.display = "none";
-  document.getElementById("seR").style.display = "initial";
-  document.getElementById("seR2").style.display = "initial";
- 
- //var username = document.getElementById("username").value;
- var password = document.getElementById("password").value;
- //console.log(mapa.get(password) + "---l");
- 
-mapa.forEach((value, key) => {
-  //console.log(`+> ${value}  ` +"  <-->  " +mapa.get(password)  )
-//console.log(`+> ${value}  ` +"  <-->  " +mapa.get(password)  )
-  if (`${value}`== mapa.get(password) ){
-    
-    document.tt.searchTerm.value =value;
-  }})
-
-    if ( password == "987654321"){
-      //console.log(mapa);
-    //  let apellido=(mapa.get(password));
-    // alert ("ACCESO A TUTOR");
-    //window.location = "https://www-drv.com/site/ipiyyiarnmnz2hdsreamyg/SanLuis/Paginas/TABLAPRINCIPAL.html"; // Redirecting to other page.
-   }
- 
- //Decimo
-  
-      else{
-      attempt --;// Decrementing by one.
-     // alert("Tu tienes "+attempt+" intentos;");
-      // Disabling fields after 3 attempts.
-      
-      
-      
-            if( attempt == 0){
-            //document.getElementById("username").disabled = true;
-            document.getElementById("password").disabled = true;
-            document.getElementById("submit").disabled = true;
-            return false;
-            }
-      }
- }
- 
- 
- 
-     
- 
-  var n = 0;
-  
- function doSearch()      {
- document.getElementById('datos').style.fontSize='12px';
-         n++;
-             if (n == 1) { document.getElementById("clicks").innerHTML = n;
- 
- 
- 
- 
- if(document.getElementById('searchTerm').value.length < 11) {
-     alert('El campo debe tener al menos 8 carácteres.');
-     }else{
- 
- if(document.getElementById("datos").style.display == "block"){
-    document.getElementById("datos").style.display = "none";
-   }else{
-    document.getElementById("datos").style.display = "block";
- }
- 
- 
- var tableReg = document.getElementById('datos');
-       var searchText = document.getElementById('searchTerm').value.toLowerCase();
- 
-   var cellsOfRow="";
-   var found=false;
-   var compareWith="";
-   
-       // Recorremos todas las filas con contenido de la tabla
-       for (var i = 1; i < tableReg.rows.length; i++)
-       {
-       cellsOfRow = tableReg.rows[i].getElementsByTagName('td');
-         found = false;
-         // Recorremos todas las celdas
-         for (var j = 0; j < cellsOfRow.length && !found; j++)
-         {
-           compareWith = cellsOfRow[j].innerHTML.toLowerCase();
-           // Buscamos el texto en el contenido de la celda
-           if (searchText.length == 0 || (compareWith.indexOf(searchText) > -1))
-           {
-             found = true;
-           }
-         }
-         if(found)
-         {
-           tableReg.rows[i].style.display = '';
- 
-         } else {
-           // si no ha encontrado ninguna coincidencia, esconde la
-           // fila de la tabla
-           tableReg.rows[i].style.display = 'none';
-         }
-       }
- 
- }	
- 
- 
- 
- }
-             else { document.getElementById("clicks").innerHTML = n;}
- if(n==2){location.reload();}
-   
- }
- 
-  var v = 0;
-
- 
- 
- var t = 0;
-
- 
- 
- 
- 
- 
-
-
-    </script>
-
-
-
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => alert("ssss"))
+  .then(() => { window.location.reload(); })
+  .catch(error => console.error('Error!', error.message))
+})
+	</script>
 
 </body>
 </html>
